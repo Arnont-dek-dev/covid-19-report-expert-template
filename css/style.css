@@ -600,7 +600,9 @@ h1, h2, h3, h4, h5,
 .sticky-wrapper {
   position: absolute;
   z-index: 100;
-  width: 100%; }
+  width: 100%; 
+  background-color: #352961;
+}
   .sticky-wrapper + .site-blocks-cover {
     margin-top: 96px; }
   .sticky-wrapper .site-menu-toggle {
@@ -1201,3 +1203,39 @@ h1, h2, h3, h4, h5,
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+  .scroll {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
