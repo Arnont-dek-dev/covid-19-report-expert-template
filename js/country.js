@@ -1,5 +1,5 @@
 $(function(){
-
+    
     var urlParams = new URLSearchParams(window.location.search);
     console.log(urlParams.get('country'));
 
@@ -14,7 +14,7 @@ $(function(){
         console.log(selectedCountry);
 
         for(var i=0;i<selectedCountry.length;i++){
-
+           
             var row = `<tr>
             <th scope="row">${selectedCountry[i].date}</th>
             <td>${selectedCountry[i].confirmed}</td>
@@ -22,13 +22,13 @@ $(function(){
             <td>${selectedCountry[i].recovered}</td>
           </tr>`
 
-          $("#data").append(row);
+          $("#data2").append(row);
 
         }
-
+        
 
     });
 
 
 
-}) 
+})
