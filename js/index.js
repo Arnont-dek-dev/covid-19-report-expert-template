@@ -12,7 +12,7 @@ $(function () {
         var selectedCountry = result[country];
         console.log(selectedCountry);
 
-        var total = selectedCountry.length;
+        
 
         var no = 1;
         for (var country in result) {
@@ -23,7 +23,7 @@ $(function () {
                         <a href="country.html?country=${country}">${country}</a>
                     </td>
                     <td>
-                        ${selectedCountry[result].confirmed}
+                        
                     </td>
             </tr>`;
 
