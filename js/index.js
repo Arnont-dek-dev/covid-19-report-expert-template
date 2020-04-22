@@ -1,41 +1,31 @@
 $(function () {
 
-    var urlParams = new URLSearchParams(window.location.search);
-    console.log(urlParams.get('country'));
-
-    var country = urlParams.get('country');
-    $("#country").html(country);
-
     var url = "https://pomber.github.io/covid19/timeseries.json";
 
     $.getJSON(url, function (result) {
-        var selectedCountry = result[country];
-        console.log(selectedCountry);
-
         
 
         var no = 1;
         for (var country in result) {
-
+            var selectedCountry = result[country];
+            var totaleach = selectedCountry[90].confirmed;
             var row = `<tr>
-                <th scope="row">${no}</th>
-                    <td>
+                        <th scope="row">${no}</th>
+                        <td>
                         <a href="country.html?country=${country}">${country}</a>
-                    </td>
-                    <td>
+                        </td>
+                        <td>
+                        <p>${totaleach}</p>
+                        </td>
                         
-                    </td>
-            </tr>`;
+                    </tr>`;
 
             $("#data1").append(row);
             no++;
 
         }
 
-
     });
 
+});
 
-
-
-})
