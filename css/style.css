@@ -1054,7 +1054,7 @@ h1, h2, h3, h4, h5,
     padding: 28px 30px;
     position: relative;
     background: #dc3545;
-    float: left; }
+    float: left;}
     .custom-owl-carousel .owl-custom-direction a:first-child {
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px; }
@@ -1207,6 +1207,7 @@ h1, h2, h3, h4, h5,
   .scroll {
     max-height: 350px;
     overflow-y: auto;
+    color: antiquewhite;
 }
 
 #myInput {

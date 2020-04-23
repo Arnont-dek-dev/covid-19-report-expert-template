@@ -3,14 +3,14 @@ $(function () {
     $.getJSON(url, function (result) {
         console.log(result);
         var no = 1;
-        var all = 0;
+        var all3 = 0;
         for (var country in result) {
             var selectedCountry = result[country];
             var total = selectedCountry.length;
-            all = all + selectedCountry[total - 1].confirmed;
+            all3 = all3 + selectedCountry[total - 1].recovered;
         }
-        console.log(all);
-        $("#total").append(row);
+        console.log(all3);
+        $("#totalrecovered").append(all3);
     });
 });
 
