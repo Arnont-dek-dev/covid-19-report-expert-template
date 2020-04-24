@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
@@ -89,48 +91,214 @@
             <div class="container">
 
                 <div class="row align-items-center">
-                    <div class="col-md-5 order-1 order-md-2 mb-5 mb-md-0">
-                        <img src="images/about_1.jpg" alt="Image" class="img-fluid">
+                    <div class="col-md-5 order-1 order-md-2 mb-5 mb-md-0 d-block d-sm-none d-none d-sm-block d-md-none">
+                        <img src="images/about_1.jpg" alt="Image" class="img-fluid" style="margin-top: 30px;">
+                    </div>
+                    <div class="col-md-5 order-1 order-md-2 mb-5 mb-md-0 d-none d-lg-block d-xl-none d-xl-block">
+                        <img src="images/about_2.jpg" alt="Image" >
                     </div>
                     <div class="col-md-6 mr-auto order-2 order-md-1">
 
-                        <h2 class="section-title mb-3"></h2>
-                        <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia
-                            quibusdam
-                            temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+                        <h2 class="section-title mb-3">COVID-19</h2>
+                        <p class="mb-5">We need your help in providing the most accurate and truthful medical statement
+                            in order for us
+                            to treat and spreading of the decease effectively.</p>
 
-                        <form method="post">
+                        <form action="index.html">
                             <div class="form-group row">
                                 <div class="col-md-6 mb-4">
-                                    <input type="text" class="form-control" placeholder="First name">
+                                    <input type="text" class="form-control" placeholder="First name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Last name">
+                                    <input type="text" class="form-control" placeholder="Last name" required>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Subject">
+                                <div class="col-md-3 mb-4">
+                                    <input type="text" class="form-control" placeholder="Age" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select class="form-control" name="gender" id="" required>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control" placeholder="Mobile phone">
                                 </div>
                             </div>
-
                             <div class="form-group row">
                                 <div class="col-md-12">
                                     <input type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
+                            <br>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Country">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+                            </div>
+                            <br>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <textarea class="form-control" id="" cols="30" rows="10"
-                                        placeholder="Write your message here."></textarea>
+                                    <h3>Questionaire COVID-19</h3>
+                                    <p style="font-size: 18px;"><b>Do you currently have any of the following symtoms? Tick all that apply.</b>
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="form-group row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
+                                    <p><b>1.Cough/Sore Throat</b></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <p><b>2.Runny Nose</b></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline3" name="customRadioInline3"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline3">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline4" name="customRadioInline3"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline4">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <p><b>3.Shortness of Breath/Difficulty breathing</b></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline5" name="customRadioInline5"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline5">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline6" name="customRadioInline5"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline6">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <p><b>4.Do you have any exsting condition which weakens your immune system?</b></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline7" name="customRadioInline7"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline7">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline8" name="customRadioInline7"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline8">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <p style="font-size: 18px;"><b>During last 14 days, have you travelled from or transited in any country*
+                                            below? Please specify.</b></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group row">
+                                    <div class="col-md-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">China</label>
+                                        </div>
+                                    </div>
 
-                                        <a id="submitbutton" href="index.html" class="btn btn-primary py-3 px-5 btn-block">Submit</a>
+                                    <div class="col-md-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                            <label class="custom-control-label" for="customCheck2">Macao</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                            <label class="custom-control-label" for="customCheck3">Hong Kong</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    
+                                        <div class="col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label" for="customCheck4">South
+                                                    Korean</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                <label class="custom-control-label" for="customCheck5">Italy</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                <label class="custom-control-label" for="customCheck6">Iran</label>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <p style="font-size: 18px;"><b>During last 14 days, have you close contact those who came back from the area
+                                        affected by the outbreak of COVID-19 or history of close contact with a confirmed case COVID-19 infection?</b></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline9" name="customRadioInline9"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline9">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline10" name="customRadioInline9"
+                                            class="custom-control-input" required>
+                                        <label class="custom-control-label" for="customRadioInline10">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="form-group row">
+                                <div class="col-md-6  ">
+                                    <input type="submit" class="btn btn-primary py-3 px-5 btn-block " value="Submit">
                                 </div>
                             </div>
 
@@ -145,42 +313,8 @@
 
         <footer class="footer-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>About Us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et
-                            veritatis
-                            corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat
-                            dicta.</p>
-                    </div>
 
-                    <div class="col-md-3 ml-auto">
-                        <h3>Links</h3>
-                        <ul class="list-unstyled footer-links">
-                            <li><a href="#home-section" class="smoothscroll">Home</a></li>
-                            <li><a href="#work-section" class="smoothscroll">Statistic</a></li>
-                            <li><a href="#process-section" class="smoothscroll">Global</a></li>
-                            <li><a href="#testimonials-section" class="smoothscroll">Details</a></li>
-                            <li><a href="#services-section" class="smoothscroll">Services</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h3>Subscribe</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto
-                            architecto?
-                            Numquam, natus?</p>
-                        <form action="#">
-                            <div class="d-flex mb-5">
-                                <input type="text" class="form-control rounded-0" placeholder="Email">
-                                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-
-                <div class="row pt-5 mt-5 text-center">
+                <div class="row  text-center">
                     <div class="col-md-12">
                         <div class="border-top pt-5">
                             <p>
@@ -218,7 +352,9 @@
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
     <script src="js/search.js"></script>
-    <script src="js/totalconfirmcase.js"></script>
+    
+
+
 
 
 
