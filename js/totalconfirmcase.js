@@ -11,6 +11,6 @@ $(function () {
         }
         console.log(all);
         $("#totalconfirm").append(all);
-    });
+    }); 
 });
 

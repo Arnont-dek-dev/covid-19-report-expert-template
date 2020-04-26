@@ -30,7 +30,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -58,29 +60,34 @@
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
+          <i class="fas fa-virus"></i>
           <div class="site-logo"><a href="index.html" class="text-uppercase">COVID-19</a></div>
-          <div>
+          
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
                 <li><a href="#work-section" class="nav-link">Statistic</a></li>
                 <li><a href="#process-section" class="nav-link">Global</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Details</a></li>
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-
+                <li><a href="#testimonials-section" class="nav-link">Protect</a></li>
+                <br>
+                <a href="about.html" class="d-xl-none"><span
+                  class="border bg-white rounded text-black border-white" style="font-size: 20px;">About</span></a>
               </ul>
             </nav>
-          </div>
+          
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
+              <ul class="site-menu main-menu site-menu-dark mr-auto">
+                <li class="cta"><a href="about.html" class="nav-link d-none d-xl-block"><span
+                  class="border bg-light rounded text-black border-danger">About</span></a></li>
                 <li class="cta"><a href="survey.html" class="nav-link"><span
                       class="border bg-danger rounded text-white border-danger">Survey</span></a></li>
               </ul>
+              
             </nav>
+          </div>
             <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span
                 class="icon-menu h3"></span></a>
-          </div>
         </div>
       </div>
 
@@ -111,6 +118,7 @@
           </div>
           <div class="col-1"></div>
           <div class="col-lg-5 mb-5">
+            <h5 class="section-edit-title">Countries affected</h5>
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
             <div class="scroll" style="border-bottom: ridge 1px rgb(191, 205, 207);">
               <table id="myTable" class="table table-hover">
@@ -133,51 +141,6 @@
 
     </div>
 
-    <div class="container section-counter" id="project-section" data-aos="fade">
-      <div class="row">
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="">
-          <div class="counter d-flex align-items-start mb-5">
-            <div class="icon-wrap"><span class="flaticon-reload text-primary"></span></div>
-
-            <div class="counter-text">
-              <strong class="number" data-number="185">0</strong>
-              <span>Countries affected</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="counter d-flex align-items-start mb-5">
-            <div class="icon-wrap"><span class="flaticon-download text-primary"></span></div>
-            <div class="counter-text">
-              <strong class="number" data-number="4500">0</strong>
-              <span>WordPress Themes </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="counter d-flex align-items-start mb-5">
-            <div class="icon-wrap"><span class="flaticon-monitor text-primary"></span></div>
-            <div class="counter-text">
-              <strong class="number" data-number="220">0</strong>
-              <span>HTML5 / CSS3</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="counter d-flex align-items-start">
-            <div class="icon-wrap"><span class="flaticon-chat text-primary"></span></div>
-            <div class="counter-text">
-              <strong class="number" data-number="3913">0</strong>
-              <span>Bootstrap</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
 
     <div class="site-section section-2 bg-light" id="process-section" data-aos="fade">
       <div class="container">
@@ -194,15 +157,15 @@
                 <div class="col">
                   <div class="card text-center">
                     <div class="card-header">
-                       <b> World Wide</b> 
+                       <b class="section-edit-title"> World Wide</b> 
                     </div>
-                    <div class="card-body">
+                    
                       <div class="card-body">
                         <div class="chart-area">
                             <canvas id="graphC"></canvas>
                         </div>
                     </div>
-                    </div>
+                   
                     
                   </div>
           </div>
@@ -216,7 +179,7 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="process bg-white rounded">
               <div>
-                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+                <span class="display-4 text-primary mb-4 d-inline-block"><i class="fas fa-lungs-virus"></i></span>
                 <h3>Confirmed</h3>
                 <h1><b><p id="totalconfirm"></p></b></h1>
               </div>
@@ -226,7 +189,7 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="process bg-white rounded">
               <div>
-                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+                <span class="display-4 text-primary mb-4 d-inline-block"><i class="fas fa-book-dead"></i></span>
                 <h3>Deaths</h3>
                 <h1><b><p id="totaldeaths"></p></b></h1>
               </div>
@@ -236,7 +199,7 @@
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="process bg-white rounded">
               <div>
-                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+                <span class="display-4 text-primary mb-4 d-inline-block"><i class="fas fa-lungs"></i></span>
                 <h3>Recovered</h3>
                 <h1><b><p id="totalrecovered"></p></b></h1>
               </div>
@@ -266,32 +229,31 @@
           <div class="owl-carousel slide-one-item-alt-text">
             <div class="slide-text">
               <blockquote>
-                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
-                  obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                <p class="author">&mdash; Jean Doe</p>
+                <p class="section-edit-title">Use mask</p>
+                <p><span></span>Wear a mask to prevent and refrain from sharing items with others.
+                   Such as drinking the same glass as beginning<span></span></p>
+                
               </blockquote>
             </div>
             <div class="slide-text">
               <blockquote>
-                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
-                  obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                <p class="author">&mdash; Gregg Pollach</p>
+                <p class="section-edit-title">Wash hands</p>
+                <p><span></span>Regularly wash your hands thoroughly or wipe your hands with alcohol.<span></span></p>
               </blockquote>
             </div>
             <div class="slide-text">
               <blockquote>
-                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
-                  obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                <p class="author">&mdash; Rober Kenneth</p>
+                <p class="section-edit-title">Eat healthy</p>
+                <p><span></span>Should eat cooked foods, refrain from raw foods to enhance immunity.<span></span></p>
               </blockquote>
             </div>
             <div class="slide-text">
               <blockquote>
-                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti,
-                  obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                <p class="author">&mdash; Joshua Smith</p>
+                <p class="section-edit-title">Stay home</p>
+                <p><span></span>Stop traveling to risky areas or countries with epidemics. And should stay only at home.<span></span></p>
               </blockquote>
             </div>
+            
           </div>
 
         </div>
@@ -315,119 +277,35 @@
   </div>
 
 
-  <div class="site-section bg-light" id="services-section" data-aos="fade">
+  <footer class="footer-section bg-light" id="service-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mb-5">
-          <h2 class="section-title">Services</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam
-            voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias
-            blanditiis consequuntur sunt nisi.</p>
-        </div>
-      </div>
-
-    </div>
-
-
-    <div class="owl-carousel nonloop-block-14">
-
-      <div class="service">
-        <div>
-          <span class="custom-icon-wrap"><span class="flaticon-reload"></span></span>
-          <h3>Branding Design</h3>
-          <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa
-            dolore molestias blanditiis consequuntur sunt nisi.</p>
-        </div>
-      </div>
-
-
-      <div class="service">
-        <div>
-          <span class="custom-icon-wrap"><span class="flaticon-download"></span></span>
-          <h3>WordPress Integration</h3>
-          <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa
-            dolore molestias blanditiis consequuntur sunt nisi.</p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div>
-          <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
-          <h3>Web Development</h3>
-          <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa
-            dolore molestias blanditiis consequuntur sunt nisi.</p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div>
-          <span class="custom-icon-wrap"><span class="flaticon-chat"></span></span>
-          <h3>HTML5/CSS3</h3>
-          <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa
-            dolore molestias blanditiis consequuntur sunt nisi.</p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div>
-          <span class="custom-icon-wrap"><span class="flaticon-glasses"></span></span>
-          <h3>Web Templates</h3>
-          <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa
-            dolore molestias blanditiis consequuntur sunt nisi.</p>
-        </div>
-      </div>
-
-      <div class="service">
-        <div>
-          <span class="custom-icon-wrap"><span class="flaticon-vector"></span></span>
-          <h3>Creative Design</h3>
-          <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa
-            dolore molestias blanditiis consequuntur sunt nisi.</p>
-        </div>
-      </div>
-
-
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-  <footer class="footer-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis
-            corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+          <img src="images/person_5.jpg" alt="" style="width: 150px">
+          <br>
+          <br>
+          <div class="row" style="margin-left: 10px;"><p class="select-edit-title" style="font-size: 18px">&nbsp;<b>Sirapob Virotkun</b></p></div>
+          <div class="row" style="margin-left: 10px;"><p class="select-edit-title" style="font-size: 18px">&nbsp;<b>6130613022</b></p></div>
         </div>
-
-        <div class="col-md-3 ml-auto">
+        <div class="col-md-5" >
+          <br>
+          <div class="row" style="margin-left: 10px;"><i class="fas fa-envelope-open"></i><p>&nbsp; : key.cmdark@gmail.com</p></div>
+          <div class="row" style="margin-left: 10px;"><i class="fas fa-mobile-alt"></i><p>&nbsp; : 0xxxxxxxxx</p></div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2 ml-auto">
           <h3>Links</h3>
           <ul class="list-unstyled footer-links">
             <li><a href="#home-section" class="smoothscroll">Home</a></li>
             <li><a href="#work-section" class="smoothscroll">Statistic</a></li>
             <li><a href="#process-section" class="smoothscroll">Global</a></li>
-            <li><a href="#testimonials-section" class="smoothscroll">Details</a></li>
-            <li><a href="#services-section" class="smoothscroll">Services</a></li>
+            <li><a href="#testimonials-section" class="smoothscroll">Protect</a></li>
+            
           </ul>
         </div>
 
-        <div class="col-md-4">
-          <h3>Subscribe</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto?
-            Numquam, natus?</p>
-          <form action="#">
-            <div class="d-flex mb-5">
-              <input type="text" class="form-control rounded-0" placeholder="Email">
-              <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-            </div>
-          </form>
-        </div>
+        
 
       </div>
 
@@ -472,8 +350,9 @@
   <script src="js/totaldeathscase.js"></script>
   <script src="js/totalrecoveredcase.js"></script>
   <script src="js/graphs.js"></script>
+  <script src="https://kit.fontawesome.com/bf5caab30d.js" crossorigin="anonymous"></script>
   <!-- Chart JS -->
-<script src="../assets/js/plugins/chartjs.min.js"></script>
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
 
 </body>
 
